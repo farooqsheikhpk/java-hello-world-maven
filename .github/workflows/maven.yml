@@ -24,6 +24,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: |
-           nslookup repository.aspose.com
+           nslookup releases.aspose.com
            curl https://releases.aspose.com/java/repo/com/aspose/aspose-slides/22.10/aspose-slides-22.10-jdk16.jar -v --output aspose-cells-22.10.jar
            mvn -B package --file pom.xml
